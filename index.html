@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ZYNQ ESPORT | Recrutement</title>
+		<style>
+		* { box-sizing: border-box; }
+
+		body {
+			margin: 0;
+			background: #080810;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			padding: 22px 8%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid #29213f;
+		}
+
+		.logo {
+			font-size: 27px;
+			font-weight: bold;
+			color: #ff4fc8;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			margin-left: 20px;
+		}
+
+		.hero {
+			text-align: center;
+			padding: 100px 20px;
+			background: radial-gradient(ellipse, #38205e, #080810 70%);
+		}
+
+		.hero h1 {
+			font-size: clamp(38px, 7vw, 70px);
+			margin: 10px;
+		}
+
+		.purple { color: #ff4fc8; }
+
+		.hero p {
+			color: #c9c5d8;
+			line-height: 1.7;
+		}
+
+		.btn {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 15px 25px;
+			border-radius: 8px;
+			background: #9b5cff;
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		section {
+			padding: 55px 8%;
+		}
+
+		h2 { text-align: center; }
+    .rank { color: #ff4fc8; font-size: .8rem; font-weight: 900; letter-spacing: 2px; }
+    .rank-line { height: 3px; width: 58px; margin: 13px 0 16px; border-radius: 8px; background: linear-gradient(90deg,#ff4fc8,#9b5cff); }
+    .note { margin-top: 22px; padding: 16px 18px; border-left: 3px solid #ff4fc8; background: rgba(255,79,200,.07); color: #c9c5d8; }
+
+		.cards {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 18px;
+			margin-top: 30px;
+		}
+
+		.card {
+			background: #11111c;
+			border: 1px solid #352653;
+			border-radius: 12px;
+			padding: 25px;
+			text-align: center;
+		}
+
+		.card h3 { color: #ff8cde; }
+
+		li {
+			margin: 12px 0;
+			color: #d6d1e2;
+		}
+
+		.cta {
+			text-align: center;
+			background: #110d1d;
+		}
+
+		footer {
+			padding: 25px;
+			text-align: center;
+			color: #999;
+			border-top: 1px solid #29213f;
+		}
+		
+    .rank-columns {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(220px, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+    .rank-column {
+      min-width: 0;
+      padding: 16px;
+      border: 1px solid rgba(201,132,255,.28);
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255,79,200,.07), rgba(155,92,255,.06));
+    }
+    .column-title {
+      text-align: center;
+      font-size: 1.05rem;
+      color: #ff4fc8;
+      margin: 2px 0 16px;
+      letter-spacing: 1px;
+    }
+    .roster-table {
+      padding: 16px;
+      margin-bottom: 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(201,132,255,.24);
+      background: #11101b;
+    }
+    .roster-table:last-child { margin-bottom: 0; }
+    .roster-table .rank { font-size: .76rem; }
+    .roster-table .roster { margin-top: 10px; }
+    @media (max-width: 1050px) {
+      .rank-columns { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+    }
+    @media (max-width: 580px) {
+      .rank-columns { grid-template-columns: 1fr; }
+    }
+</style>
+	</head>
+	<body>
+		<header>
+			<div class="logo">ZYNQ ESPORT</div>
+			<nav>
+				<a href="#team">La team</a>
+				<a href="#postes">Postes</a>
+				<a href="#conditions">Conditions</a>
+			</nav>
+		</header>
+		<div class="hero">
+			<p class="purple">ROCKET LEAGUE ESPORT</p>
+			<h1>REJOINS LA <span class="purple">ZYNQ ESPORT</span></h1>
+			<p>
+				Tu veux progresser, rencontrer des joueurs motivés
+				et participer à un projet esport ?<br>
+				Notre recrutement est ouvert !
+			</p>
+
+			<a class="btn"
+		   href="https://discord.gg/rvnGGhsbH"
+		   target="_blank">
+		   POSTULER MAINTENANT
+			</a>
+		</div>
+		<section id="rosters">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">NOS ROSTERS</div>
+      <h2>Les rosters <span class="gradient">ZYNQ ESPORT</span></h2>
+      <p>Chaque colonne correspond à un rang. Les divisions A, B et C contiennent chacune 3 joueurs.</p>
+    </div>
+    <div class="rank-columns">
+      <div class="rank-column">
+        <h3 class="column-title">DIAMANT</h3>
+        <article class="roster-table">
+          <div class="rank">DIAMANT A</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — NONAME 〽️♿</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+        <article class="roster-table">
+          <div class="rank">DIAMANT B</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+        <article class="roster-table">
+          <div class="rank">DIAMANT C</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+      </div>
+      <div class="rank-column">
+        <h3 class="column-title">CHAMPION</h3>
+        <article class="roster-table">
+          <div class="rank">CHAMPION A</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+        <article class="roster-table">
+          <div class="rank">CHAMPION B</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+        <article class="roster-table">
+          <div class="rank">CHAMPION C</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+      </div>
+      <div class="rank-column">
+        <h3 class="column-title">GRAND CHAMPION</h3>
+        <article class="roster-table">
+          <div class="rank">GRAND CHAMPION A</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+        <article class="roster-table">
+          <div class="rank">GRAND CHAMPION B</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+        <article class="roster-table">
+          <div class="rank">GRAND CHAMPION C</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+      </div>
+      <div class="rank-column">
+        <h3 class="column-title">SSL</h3>
+        <article class="roster-table">
+          <div class="rank">SSL A</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+        <article class="roster-table">
+          <div class="rank">SSL B</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+        <article class="roster-table">
+          <div class="rank">SSL C</div>
+          <div class="rank-line"></div>
+          <ul class="roster">
+            <li><strong>Joueur 1</strong> — À recruter</li>
+            <li><strong>Joueur 2</strong> — À recruter</li>
+            <li><strong>Joueur 3</strong> — À recruter</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="conditions">
+		<h2>LES CONDITIONS</h2>
+			<ul>
+				<li>Être motivé et actif.</li>
+				<li>Respecter les autres membres.</li>
+				<li>Savoir communiquer et travailler en équipe.</li>
+				<li>Être prêt à s'investir dans le projet.</li>
+				<li>Accepter le règlement de la team.</li>
+			</ul>
+		</section>
+		<section class="cta">
+		<h2>PRÊT À NOUS REJOINDRE ?</h2>
+			<p>Rejoins notre Discord et ouvre une candidature !</p>
+			<a class="btn"
+		   href="https://discord.gg/rvnGGhsbH"
+		   target="_blank">
+		   REJOINDRE LE DISCORD
+			</a>
+		</section>
+		<footer>
+		© ZYNQ ESPORT — Rocket League Esport
+		</footer>
+	</body>
+</html>
